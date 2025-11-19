@@ -1,14 +1,12 @@
-markdown
 ```mermaid
 graph TD
-    A[报告基本信息表 (id(report_id))] --> B[报告检查范围表 (report_id(综合报告ID),  id(部件ID))];
-    B --> C[报告检查范围明细表 (id(item_id))];
-    A --> D[报告仪器设备信息表 (report_id)];
-    A --> E[报告附件清单 (report_id)];
+    A1[报告基本信息表<br/>id: report_id] --> B1[报告检查范围表<br/>report_id: 综合报告ID<br/>id: 部件ID]
+    B1 --> C1[报告检查范围明细表<br/>id: item_id]
+    A1 --> D1[报告仪器设备信息表<br/>report_id]
+    A1 --> E1[报告附件清单<br/>report_id]
 
-
-    A[记录单基本信息表 (id(record_id))] --> B[检查范围表 (record_id(原始记录单ID), id(部件ID))];
-    A --> C[技术条件表 (record_id)];
-    B --> D[照片表 (item_id(部件ID))];
-    A --> E[班组成员表 (record_id)];
+    A2[记录单基本信息表<br/>id: record_id] --> B2[检查范围表<br/>record_id: 原始记录单ID<br/>id: 部件ID]
+    A2 --> C2[技术条件表<br/>record_id]
+    B2 --> D2[照片表<br/>item_id: 部件ID]
+    A2 --> E2[班组成员表<br/>record_id]
 ```
